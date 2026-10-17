@@ -20,7 +20,6 @@ origin-xps-figure/          ← 技能本体
     Layer-Composite.ps1     ← 透明度备用方案（分层渲染）
     composite_layers.py     ← 透明度备用方案（合成）
     SAMPLE_FORMAT.md        ← 输入格式与 meta 字段说明
-docs/                       ← 示例图（合成数据，非实验数据）
 dist/                       ← 可直接分发的技能压缩包
 ```
 
@@ -75,5 +74,4 @@ python .\origin-xps-figure\assets\prep_single.py --file YOUR.csv --elem "C 1s" `
 
 ## 数据安全
 
-本仓库**不包含任何实验数据**：`docs/` 里两张示例图由 `synth` 合成的谱生成，
-`.gitignore` 已排除 `data/`、`data_raw/`、`out/`、`*.csv`、`*.opju`、`*.png`（`docs/` 除外）。
+本仓库**不包含任何实验数据**：`.gitignore` 已排除 `data/`、`data_raw/`、`out/`、`*.csv`、`*.opju`、`*.png`。

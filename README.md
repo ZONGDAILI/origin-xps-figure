@@ -5,11 +5,12 @@
 
 Cover two common scenarios:
 
-| Multi-cycle stacked (waterfall) | Single-spectrum peak fit |
-|---|---|
-| ![stacked](docs/style-example-stacked.png) | ![single](docs/style-example-single.png) |
+- **Multi-cycle stacked (waterfall)** — all cycles of a narrow scan on one axis, offset per cycle.
+- **Single-spectrum peak fit** — one representative cycle, components filled down to the background.
 
-*(Both images above are generated from **synthetic** spectra — no experimental data is shipped in this repo.)*
+The style it produces: 600 dpi, thin uniform frame, Arial integer tick labels only, components coloured by a
+blue→red sequence ordered by binding energy, each component filled to its own background curve at 30 %
+transparency, raw points as 50 %-transparent open circles, light-grey solid background line, no in-figure text.
 
 ## What makes this different
 
@@ -84,7 +85,6 @@ origin-xps-figure/
     Layer-Composite.ps1        fallback when a build cannot do COM transparency
     composite_layers.py        layered render + alpha compositing
     SAMPLE_FORMAT.md           input format / meta fields
-docs/                          example figures (synthetic data)
 dist/                          ready-to-share zip of the skill
 ```
 

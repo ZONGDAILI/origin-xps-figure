@@ -28,6 +28,4 @@ out/
 *.opju
 *.opj
 *.csv
-!docs/*.csv
 *.png
-!docs/*.png
